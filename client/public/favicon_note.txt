@@ -1,0 +1,1 @@
+// We need to create a favicon.ico file here

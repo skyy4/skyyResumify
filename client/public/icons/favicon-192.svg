@@ -1,0 +1,19 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M96 12L120.72 64.08L180 74.16L138 114.96L145.44 174.12L96 146.16L46.56 174.12L54 114.96L12 74.16L71.28 64.08L96 12Z" 
+    fill="url(#starGradient)" 
+    stroke="#8B5CF6" 
+    strokeWidth="4" />
+  
+  <!-- Sparkling effects -->
+  <circle cx="144" cy="48" r="7.2" fill="#FFF" />
+  <circle cx="48" cy="72" r="6" fill="#FFF" />
+  <circle cx="96" cy="150" r="4.8" fill="#FFF" />
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="starGradient" x1="12" y1="72" x2="144" y2="174" gradientUnits="userSpaceOnUse">
+      <stop stopColor="#3B82F6" />
+      <stop offset="1" stopColor="#8B5CF6" />
+    </linearGradient>
+  </defs>
+</svg> 

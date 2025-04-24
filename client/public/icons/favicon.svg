@@ -1,0 +1,19 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M16 2L20.12 10.68L30 12.36L23 19.16L24.24 29.02L16 24.36L7.76 29.02L9 19.16L2 12.36L11.88 10.68L16 2Z" 
+    fill="url(#starGradient)" 
+    stroke="#8B5CF6" 
+    strokeWidth="1" />
+  
+  <!-- Sparkling effects -->
+  <circle cx="24" cy="8" r="1.2" fill="#FFF" />
+  <circle cx="8" cy="12" r="1" fill="#FFF" />
+  <circle cx="16" cy="25" r="0.8" fill="#FFF" />
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="starGradient" x1="2" y1="12" x2="24" y2="29" gradientUnits="userSpaceOnUse">
+      <stop stopColor="#3B82F6" />
+      <stop offset="1" stopColor="#8B5CF6" />
+    </linearGradient>
+  </defs>
+</svg> 
