@@ -23,7 +23,7 @@ const Footer = () => {
           </span>
           <span className="mx-8 text-gray-400">•</span>
           <span className="text-gray-300">
-            Developed by Team MERN Muffins (G9)
+            Developed by skyy4
           </span>
           <span className="mx-8 text-gray-400">•</span>
           <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
@@ -31,7 +31,7 @@ const Footer = () => {
           </span>
           <span className="mx-8 text-gray-400">•</span>
           <span className="text-gray-300">
-            Developed by Team MERN Muffins (G9)
+            Developed by skyy4
           </span>
           <span className="mx-8 text-gray-400">•</span>
         </motion.div>
@@ -54,7 +54,7 @@ const Footer = () => {
           </span>
           <span className="mx-8 text-gray-400">•</span>
           <span className="text-gray-300">
-            Developed by Team MERN Muffins (G9)
+            Developed by skyy4
           </span>
           <span className="mx-8 text-gray-400">•</span>
           <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
@@ -62,7 +62,7 @@ const Footer = () => {
           </span>
           <span className="mx-8 text-gray-400">•</span>
           <span className="text-gray-300">
-            Developed by Team MERN Muffins (G9)
+            Developed by skyy4
           </span>
           <span className="mx-8 text-gray-400">•</span>
         </motion.div>

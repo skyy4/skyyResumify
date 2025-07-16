@@ -11,7 +11,10 @@ export const metadata: Metadata = {
   description: "Virtual Resume Builder",
   manifest: "/manifest.json",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/icons/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "32x32" }
+    ]
   },
 };
 
