@@ -27,7 +27,7 @@ const Page = () => {
     if (userDetails?.currentUser) {
       router.push("/");
     }
-  }, []);
+  }, [router, userDetails?.currentUser]);
   
   return (
     <div className="min-h-screen w-full bg-gradient-to-b from-gray-800 to-gray-900 overflow-hidden">

@@ -112,7 +112,7 @@ export default function Home() {
               </h1>
               
               <p className="text-lg text-gray-300 mb-8 max-w-xl mx-auto lg:mx-0">
-                At <span className="font-bold text-blue-300">Resumify</span>, we transform your professional experience into compelling narratives. Our expertly designed templates help showcase your unique talents and catch employers' attention.
+                At <span className="font-bold text-blue-300">Resumify</span>, we transform your professional experience into compelling narratives. Our expertly designed templates help showcase your unique talents and catch employers&apos; attention.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">

@@ -18,7 +18,7 @@ const useAuth = () => {
       // Redirect the user to the login page if not authenticated
       router.replace(redirectPath);
     }
-  }, []);
+  }, [isAuthenticated, router]);
 
   return null; // Return null to avoid rendering anything on the protected page
 };

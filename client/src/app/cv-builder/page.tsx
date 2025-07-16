@@ -120,11 +120,10 @@ const CvBuilder = () => {
   };
   useEffect(() => {
     setResumeData();
-
     return () => {
       dispatch(removeResume());
     };
-  }, [resumeId]);
+  }, [resumeId, dispatch, setResumeData]);
   // const customStyles = {
   //   font: "Arial, sans-serif",
   //   // Other custom styles
@@ -288,23 +287,6 @@ switch (template) {
         </div>
       </div>
       
-      <style jsx global>{`
-        .custom-scrollbar::-webkit-scrollbar {
-          width: 5px;
-          height: 5px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-          background: rgba(15, 23, 42, 0.2);
-          border-radius: 8px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-          background: rgba(59, 130, 246, 0.4);
-          border-radius: 8px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-          background: rgba(59, 130, 246, 0.6);
-        }
-      `}</style>
     </div>
   );
 };
