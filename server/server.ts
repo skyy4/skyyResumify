@@ -15,7 +15,10 @@ app.set("trust proxy", 1); // trust first proxy
 //http://localhost:3000,https://online-cv-builder.vercel.app
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: [
+      "http://localhost:3000",
+      "https://skyy-resumify.vercel.app"
+    ],
     methods: "GET,POST, PUT, DELETE, PATCH",
     credentials: true,
     exposedHeaders: ["Access-Control-Allow-Origin"],
