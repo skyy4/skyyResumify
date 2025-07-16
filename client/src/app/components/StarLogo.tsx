@@ -1,7 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const StarLogo = ({ size = 32, className = "" }) => {
+interface StarLogoProps {
+  size?: number;
+  className?: string;
+}
+
+const StarLogo: React.FC<StarLogoProps> = ({ size = 32, className = "" }) => {
   return (
     <div className={`relative ${className}`}>
       {/* Main star */}

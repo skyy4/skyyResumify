@@ -1,6 +1,8 @@
 {
   "parser": "@typescript-eslint/parser", // if using TypeScript
   "extends": [
+    "next",
+    "next/core-web-vitals",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended"
   ],

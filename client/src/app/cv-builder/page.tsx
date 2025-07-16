@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useCallback } from "react";
 import FieldSideBar from "../components/FieldSideBar";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../store/store";
@@ -88,7 +88,7 @@ const CvBuilder = () => {
   ) as string;
 
   useAuth();
-  const setResumeData = async () => {
+  const setResumeData = useCallback(async () => {
     if (!resumeId) {
       return router.push("/resume");
     }
@@ -103,21 +103,17 @@ const CvBuilder = () => {
         },
       });
       if (data.success) {
-        
         dispatch(addResume(data.resume));
-       
       }
      } catch (error:any) {
-  
       if(error.response.data.status===false){
-       
         dispatch(removeResume());
         dispatch(signOut());
         router.push("/signpage")
       }
      }
     }
-  };
+  }, [resumeId, router, token, dispatch]);
   useEffect(() => {
     setResumeData();
     return () => {
