@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/icons/favicon-new.svg',
+        url: '/icons/favicon-globe.svg',
         type: 'image/svg+xml',
       },
       {
