@@ -1,60 +1,43 @@
 # Resumify
 
-A comprehensive resume builder application that helps users create professional resumes with ease.
+[![Deploy on Vercel](https://vercel.com/button)](https://skyy-resumify.vercel.app)
 
-## Project Structure
+**Live Demo:** [skyy-resumify.vercel.app](https://skyy-resumify.vercel.app)
 
-This project consists of:
+---
 
-- **client**: A Next.js frontend application with TypeScript
-- **server**: A Node.js backend with Express and MongoDB
+Resumify is a modern, online resume builder that helps you craft professional CVs with beautiful templates and a smooth user experience.
+
+## Features
+- Multiple resume templates
+- Live preview and easy editing
+- Download as PDF
+- User authentication
+- Built with Next.js, Express, MongoDB, and Tailwind CSS
 
 ## Getting Started
 
-### Prerequisites
-
-- Node.js (v14 or later)
-- MongoDB
-
-### Installation
-
-1. Clone the repository
-   ```bash
+1. **Clone the repository:**
+   ```sh
    git clone https://github.com/skyy4/skyyResumify.git
    cd skyyResumify
    ```
-
-2. Install dependencies for both client and server
-   ```bash
-   # Install client dependencies
-   cd client
-   npm install
-
-   # Install server dependencies
-   cd ../server
-   npm install
+2. **Install dependencies:**
+   ```sh
+   cd client && npm install
+   cd ../server && npm install
    ```
+3. **Run locally:**
+   - Start backend: `cd server && npm run dev`
+   - Start frontend: `cd client && npm run dev`
 
-3. Start the development servers
-   ```bash
-   # Start server (from server directory)
-   npm run dev
+## Environment Variables
+- See `.env.example` in both `client/` and `server/` for required variables.
 
-   # Start client (from client directory)
-   npm run dev
-   ```
+## Deployment
+- The app is deployed on [Vercel](https://vercel.com/) for the frontend and [Render](https://render.com/) for the backend.
+- **Live App:** [https://skyy-resumify.vercel.app](https://skyy-resumify.vercel.app)
 
-## Features
+---
 
-- Interactive resume builder
-- Multiple resume templates
-- PDF export functionality
-- Secure user authentication
-- Profile management
-
-## Technologies Used
-
-- Frontend: Next.js, React, TypeScript, Tailwind CSS
-- Backend: Node.js, Express, TypeScript
-- Database: MongoDB
-- Authentication: JWT 
+Made with ❤️ by [skyy4](https://github.com/skyy4) 
