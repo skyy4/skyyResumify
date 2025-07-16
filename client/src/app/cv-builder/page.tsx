@@ -12,8 +12,6 @@ import { useMediaQuery } from "@mui/material";
 import { useRouter } from "next/navigation";
 import { signOut } from "../store/userSlice";
 import ProfessionalCV from "../template/Professional";
-import html2pdf from "html2pdf.js";
-import { Printer, Download, Pencil, Eye, AlertCircle } from "lucide-react";
 import { useReactToPrint } from "react-to-print";
 import Simple from "../template/Simple";
 import Modern from "../template/Modern";
@@ -208,10 +206,13 @@ switch (template) {
     content: () => componentRef.current,
   });
 
-  const handleDownload = () => {
-    const input = componentRef.current;
-    if (input) {
-      html2pdf().from(input).save(`resumify-${resumeData?.templateName || 'resume'}.pdf`);
+  const handleDownload = async () => {
+    if (typeof window !== "undefined") {
+      const html2pdf = (await import("html2pdf.js")).default;
+      const input = componentRef.current;
+      if (input) {
+        html2pdf().from(input).save(`resumify-${resumeData?.templateName || 'resume'}.pdf`);
+      }
     }
   };
 
