@@ -17,6 +17,7 @@ import Simple from "../template/Simple";
 import Modern from "../template/Modern";
 import SimpleNavbar from "../components/SimpleNavbar";
 import { motion } from "framer-motion";
+import { Printer, Download, AlertCircle } from "lucide-react";
 
 export interface PersonalData {
   firstName?: string;
