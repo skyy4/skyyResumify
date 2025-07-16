@@ -32,13 +32,13 @@ const signUpSchema = z
     try {
       const validation=  signUpSchema.safeParse(req.body);
         if(!validation.success){
-            return res.status(404).send({status:false, message: validation.error.issues[0].message });
+            return res.status(400).send({status:false, message: validation.error.issues[0].message });
         }
         const { email, password, username, photo } = req.body;
 
       const existingUser = await User.findOne({ email });
       if (existingUser) {
-        return res.status(404).send({status:false, message: "user already exists" });
+        return res.status(409).send({status:false, message: "user already exists" });
       }
       
       const hashedPassword =  await hashPassword(password);
@@ -53,7 +53,7 @@ const signUpSchema = z
       const user2 = user.toObject();
       delete user2.password;
       res
-        .status(203)
+        .status(201)
         .send({ status: true, message: "user signed in successfully" });
     } catch (error) {
       res.status(500).send({status:false, message:"internal server error"})
